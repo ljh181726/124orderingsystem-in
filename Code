@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>訂餐系統 - 最終版</title>
+    <title>訂餐系統 -校內版</title>
     <!-- Use Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Use Google Fonts Inter -->
@@ -205,38 +205,23 @@
             const initialData = {
                 '1': {
                     restaurant: "蝦米飯",
-                    items: [
-                        { name: "蝦米飯套餐", price: 80 },
-                        { name: "滷肉飯套餐", price: 60 }
-                    ]
+                    items: []
                 },
                 '2': {
                     restaurant: "相撲咖哩",
-                    items: [
-                        { name: "豬排咖哩", price: 120 },
-                        { name: "雞塊咖哩", price: 110 }
-                    ]
+                    items: []
                 },
                 '3': {
                     restaurant: "八方雲集",
-                    items: [
-                        { name: "招牌鍋貼", price: 60 },
-                        { name: "玉米水餃", price: 65 }
-                    ]
+                    items: []
                 },
                 '4': {
                     restaurant: "麥當勞",
-                    items: [
-                        { name: "麥克雞塊", price: 100 },
-                        { name: "大麥克", price: 110 }
-                    ]
+                    items: []
                 },
                 '5': {
                     restaurant: "祺仙館",
-                    items: [
-                        { name: "招牌牛肉麵", price: 130 },
-                        { name: "餛飩麵", price: 90 }
-                    ]
+                    items: []
                 }
             };
             const menuDocRef = doc(db, `public_weekly_menu/menu_data`);
@@ -340,8 +325,8 @@
 
         async function submitTodayOrder(day) {
             const seatNumber = document.getElementById('seatNumber').value.trim();
-            if (!seatNumber || isNaN(seatNumber) || seatNumber < 1 || seatNumber > 99) {
-                showMessage("請輸入有效的座號 (1-99)！");
+            if (!seatNumber || isNaN(seatNumber) || seatNumber < 1 || seatNumber > 31) {
+                showMessage("請輸入有效的座號 (1-31)！");
                 return;
             }
 

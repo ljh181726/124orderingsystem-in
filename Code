@@ -99,12 +99,13 @@ let menuData = {};
 let dailyOrdersData = {};
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAPnTUu5NFB-HylHLEYkCKfT_a51XxDkb0",
-  authDomain: "ordering-system-66232.firebaseapp.com",
-  projectId: "ordering-system-66232",
-  storageBucket: "ordering-system-66232.firebasestorage.app",
-  messagingSenderId: "814499187803",
-  appId: "1:814499187803:web:6b2f6dbe5fa7e0ece3c37e"
+    apiKey: "AIzaSyCXfopJb3vTioZ8iQl34RgNHC7HENYllOg",
+    authDomain: "ordering-system-in.firebaseapp.com",
+    projectId: "ordering-system-in",
+    storageBucket: "ordering-system-in.firebasestorage.app",
+    messagingSenderId: "501137434058",
+    appId: "1:501137434058:web:800fea249ac89230d6db33",
+    measurementId: "G-HWMGTQRBG3"
 };
 
 try {
